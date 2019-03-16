@@ -1,6 +1,6 @@
 ﻿//#define disablebluetooth
 //#define VERBOSE
-//#USEDBC
+//#define USEDBC
 
 using DBCLib;
 using Android.OS;
