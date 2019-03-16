@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/device"
+        android:title="Choose bluetooth device" />
+  <item android:id="@+id/bluetoothEnabled"
+        android:title="Bluetooth comms" android:checkable="true" android:checked="true" />
+  <item android:id="@+id/metric"
+        android:title="Metric units" android:checkable="true" android:checked="true" />
+  <item android:id="@+id/resettabs"
+        android:title="Factory Reset all tabs" />
+  <item android:id="@+id/browse"
+        android:title="View logs" />
+  <item android:id="@+id/resetthrow"
+        android:title="Reset gauge throw" />
+  <item android:id="@+id/help"
+      android:title="Help" />
+</menu>

@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/TeslaCAN/v15
+/App2/bin
+/App2/obj
+/packages
+/BitShiftTest/obj
+/$tf
+/.vs
+/BitShiftTest/bin/SimulatorRel
+/BuildProcessTemplates
+/BitShiftTest/bin/Release

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:layout_height="wrap_content">
+    <ProgressBar
+        p1:id="@+id/ProgressBar1"
+        p1:progressDrawable="@drawable/ProgressStyle"
+        p1:layout_width="match_parent"
+        p1:layout_height="25dp"
+        p1:indeterminate="false"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        p1:layout_centerVertical="true"
+        p1:progress="50" />
+    <TextView
+        p1:text="Medium Text"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView1"
+        p1:textColor="@android:color/darker_gray"
+        p1:layout_centerVertical="true" />
+    <TextView
+        p1:text="Large Text"
+        p1:textAppearance="?android:attr/textAppearanceLarge"
+        p1:id="@+id/textView2"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_centerHorizontal="true"
+        p1:textSize="50dp" />
+    <TextView
+        p1:text="unit"
+        p1:textAppearance="?android:attr/textAppearanceMedium"
+        p1:id="@+id/textView3"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_alignParentRight="true"
+        p1:textColor="@android:color/darker_gray"
+        p1:layout_centerVertical="true" />
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/RelativeLayout1">
+	<GridView
+		p1:minWidth="25px"
+		p1:minHeight="25px"
+		p1:layout_width="match_parent"
+		p1:layout_height="match_parent"
+		p1:id="@+id/gridView1"
+		p1:background="#ffffffff" />
+    <TextView
+        p1:text="Status"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="wrap_content"
+        p1:id="@+id/StatusText"
+        p1:layout_alignBottom="@id/gridView1"
+        p1:layout_height="wrap_content"
+        p1:background="#88000000"
+        p1:gravity="bottom" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_more"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/menuIcon"
+        p1:clickable="true"
+        p1:layout_alignParentRight="true" />
+    <ImageView
+        p1:src="@android:drawable/ic_menu_preferences"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/prefIcon"
+        p1:clickable="true"
+        p1:layout_alignParentLeft="true" />
+</RelativeLayout>

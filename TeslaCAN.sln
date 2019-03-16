@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeslaSCAN", "App2\TeslaSCAN.csproj", "{EEF29FE8-5720-4785-8F15-517EC88180E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0E25633C-C4BD-4BBD-A910-832CB8019B45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitShiftTest", "BitShiftTest\BitShiftTest.csproj", "{5C382608-1F52-4410-9C0B-AA7038536BC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBCLib", "DBCTools\DBCLib\DBCLib.csproj", "{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Simulator|Any CPU = Simulator|Any CPU
+		SimulatorRel|Any CPU = SimulatorRel|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Simulator|Any CPU.ActiveCfg = Simulator|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Simulator|Any CPU.Build.0 = Simulator|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.Simulator|Any CPU.Deploy.0 = Simulator|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.SimulatorRel|Any CPU.ActiveCfg = SimulatorRel|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.SimulatorRel|Any CPU.Build.0 = SimulatorRel|Any CPU
+		{EEF29FE8-5720-4785-8F15-517EC88180E6}.SimulatorRel|Any CPU.Deploy.0 = SimulatorRel|Any CPU
+		{5C382608-1F52-4410-9C0B-AA7038536BC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C382608-1F52-4410-9C0B-AA7038536BC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C382608-1F52-4410-9C0B-AA7038536BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C382608-1F52-4410-9C0B-AA7038536BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C382608-1F52-4410-9C0B-AA7038536BC9}.Simulator|Any CPU.ActiveCfg = Release|Any CPU
+		{5C382608-1F52-4410-9C0B-AA7038536BC9}.Simulator|Any CPU.Build.0 = Release|Any CPU
+		{5C382608-1F52-4410-9C0B-AA7038536BC9}.SimulatorRel|Any CPU.ActiveCfg = SimulatorRel|Any CPU
+		{5C382608-1F52-4410-9C0B-AA7038536BC9}.SimulatorRel|Any CPU.Build.0 = SimulatorRel|Any CPU
+		{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}.Simulator|Any CPU.ActiveCfg = Release|Any CPU
+		{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}.Simulator|Any CPU.Build.0 = Release|Any CPU
+		{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}.SimulatorRel|Any CPU.ActiveCfg = Release|Any CPU
+		{9C82B2B9-2366-45B8-9903-A1A0E7C961EA}.SimulatorRel|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {02B377AE-6DA7-4814-93F0-79EEB5B43C83}
+	EndGlobalSection
+EndGlobal

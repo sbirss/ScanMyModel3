@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <!--<item android:id="@+id/selectionMode"
+        android:title="Select single" android:checkable="true" />-->
+  <item android:id="@+id/logFast"
+        android:title="CSV log" android:checkable="true" />
+<!--  <item android:id="@+id/logSlow"
+        android:title="CSV log slow" android:checkable="true" android:enabled="false" />-->
+  <item android:id="@+id/debugLog"
+        android:title="Raw log" android:checkable="true" />
+  <!--<item android:id="@+id/browse"
+        android:title="View logs" />-->
+  <item android:id="@+id/bigger"
+        android:title="Size +" />
+  <item android:id="@+id/smaller"
+        android:title="Size -" />
+  <!--<item android:id="@+id/bluetoothEnabled"
+        android:title="Bluetooth comms" android:checkable="true" android:checked="true" />-->
+  <item android:id="@+id/viewType"
+      android:title="Gauge type" />
+  <!--<item android:id="@+id/colMore"
+        android:title="Col +" />
+  <item android:id="@+id/colLess"
+        android:title="Col -" />-->
+  <item android:id="@+id/newtrip"
+        android:title="New trip" />
+  <item android:id="@+id/resettrip"
+        android:title="Reset trip" />
+  <item android:id="@+id/newtab"
+        android:title="New tab" />
+  <item android:id="@+id/deletetab"
+        android:title="Delete tab" />
+  <item android:id="@+id/paste"
+        android:title="Paste" />
+</menu>

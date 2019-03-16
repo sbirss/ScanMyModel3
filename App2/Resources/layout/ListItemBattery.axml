@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:layout_width="match_parent"
+    p1:id="@+id/relativeLayout1"
+    p1:layout_height="wrap_content">
+    <TextView
+        p1:text="Small Text"
+        p1:textAppearance="?android:attr/textAppearanceSmall"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/textView4"
+        p1:textSize="10dp" />
+    <ProgressBar
+        p1:id="@+id/ProgressBar1"
+        p1:progressDrawable="@drawable/ProgressStyle"
+        p1:layout_width="match_parent"
+        p1:layout_height="20dp"
+        p1:indeterminate="false"
+        p1:layout_below="@+id/textView4"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        p1:progress="10"
+        p1:layout_alignParentBottom="true" />
+    <TextView
+        p1:text="Large Text"
+        p1:id="@+id/textView2"
+        p1:layout_width="wrap_content"
+        p1:layout_height="wrap_content"
+        p1:layout_centerHorizontal="true"
+        p1:layout_alignBaseline="@id/ProgressBar1"
+        p1:layout_alignParentBottom="true"
+        p1:textAppearance="?android:attr/textAppearanceMedium" />
+</RelativeLayout>

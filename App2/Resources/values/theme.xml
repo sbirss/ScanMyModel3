@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="Theme.Custom" parent="@android:style/Theme.DeviceDefault">
+    <item name="android:colorAccent">@android:color/holo_orange_light</item>
+  </style>
+<style name="Theme.Custom1" parent="@android:style/Theme.Black.NoTitleBar"><item name="android:colorAccent">@android:color/holo_orange_dark</item></style><style name="Theme.Custom2" parent="@android:style/Theme.Black.NoTitleBar"><item name="android:colorPrimary">?android:attr/colorBackground</item><item name="android:colorAccent">?android:attr/colorButtonNormal</item><item name="android:textColorPrimary">?android:attr/colorForeground</item><item name="android:textColorSecondary">@android:color/darker_gray</item></style></resources>
