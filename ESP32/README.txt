@@ -1,0 +1,1 @@
+Put eps32_can into C:\Users\USERNAME\Documents\Arduino\hardware\espressif\esp32\libraries
