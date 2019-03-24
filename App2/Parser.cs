@@ -1,6 +1,6 @@
 ﻿//#define disablebluetooth
 //#define VERBOSE
-//#define USEDBC
+#define USEDCB
 
 using DBCLib;
 using Android.OS;
@@ -179,7 +179,7 @@ namespace TeslaSCAN {
             String dbcPath = "Model3CAN.dbc";
             string path = Directory.GetCurrentDirectory();
             var pathFile = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads);
-            IEnumerable<string> files2 = Directory.EnumerateFiles((String)pathFile, "*.dbc");
+            //IEnumerable<string> files2 = Directory.EnumerateFiles((String)pathFile, "*.dbc");
             dbcPath = (string)pathFile + "/" + dbcPath;
 
 
