@@ -12,6 +12,10 @@ using System.IO;
 using System.Linq;
 using System.Threading;
 using System.Xml.Serialization;
+using Android.Content;
+using Android.App;
+using Android.Content.Res;
+using System.Text;
 
 namespace TeslaSCAN {
 
@@ -32,9 +36,10 @@ namespace TeslaSCAN {
     char separator = ',';
     Stopwatch logTimer;
     private MainActivity mainActivity;
+        System.IO.Stream inputStream;
 
 
-    public const double miles_to_km = 1.609344;
+        public const double miles_to_km = 1.609344;
     public const double kw_to_hp = 1.34102209;
     public const double nm_to_ftlb = 0.737562149;
     double nominalFullPackEnergy;
@@ -176,64 +181,75 @@ namespace TeslaSCAN {
 
 #if USEDCB
 
-            String dbcPath = "Model3CAN.dbc";
-            string path = Directory.GetCurrentDirectory();
-            var pathFile = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads);
-            //IEnumerable<string> files2 = Directory.EnumerateFiles((String)pathFile, "*.dbc");
-            dbcPath = (string)pathFile + "/" + dbcPath;
-
+            //String dbcPath = "Model3CAN.dbc";
+            //string path = Directory.GetCurrentDirectory();
+            //var pathFile = Android.OS.Environment.GetExternalStoragePublicDirectory(Android.OS.Environment.DirectoryDownloads);
+            ////IEnumerable<string> files2 = Directory.EnumerateFiles((String)pathFile, "*.dbc");
+            //dbcPath = (string)pathFile + "/" + dbcPath;
+            //inputStream = mainActivity.Assets.Open("CAN_BUS_LOG_Feb_10.txt");
 
             //LINES 185 to 239 are taken from CANBUS-Analyzer https://github.com/amund7/CANBUS-Analyzer
-            if (dbcPath != null)
+            //if (dbcPath != null)
+            if (true)
             {
                 Reader reader = new DBCLib.Reader();
 
                 reader.AllowErrors = true;
 
-                List<object> entries = reader.Read(dbcPath);
-
-                foreach (object entry in entries)
+                //List<object> entries = reader.Read(dbcPath);
+                //AssetManager assets = this.Assets;
+                List<KeyValuePair<uint, string>> errors = null;
+                List< KeyValuePair<uint, string> > warnings = null;
+                using (StreamReader streamReader = new StreamReader(mainActivity.Assets.Open("Model3CAN.dbc"), Encoding.Default, false))
                 {
-                    if (entry is DBCLib.Message)
-                    {
-                        DBCLib.Message message = (DBCLib.Message)entry;
+                    List<object> entries = reader.Read(streamReader, "Model3CAN.dbc", errors, warnings);
 
-                        packets.Add((int)message.Id, p = new Packet((int)message.Id, this));
-                        foreach (DBCLib.Message.Signal signal in message.Signals)
+                    //List<object> entries = reader.Read(mainActivity.Assets.Open("Model3CAN.dbc"));
+
+                    foreach (object entry in entries)
+                    {
+                        if (entry is DBCLib.Message)
                         {
-                            var valueLookup = (DBCLib.Value)
-                              entries.Where(x => x is DBCLib.Value && ((DBCLib.Value)x).ContextSignalName == signal.Name).FirstOrDefault();
-                            p.AddValue(
-                              signal.Name,//.Replace("_", " "),
-                              signal.Unit,
-                              signal.Name,
-                              (bytes) => {
-                                  double result;
-                                  if (signal.StartBit + signal.BitSize > bytes.Length * 8) // check data length
-                                return 0;
-                                  if (signal.Multiplexer) // if this is our multiplex / page selector
-                                return
-                                  p.currentMultiplexer = // store it
-                                    ExtractSignalFromBytes(bytes, signal); // and return it
-                            else if (signal.MultiplexerIdentifier != null)
-                                  { // else if this is a sub-item
-                                if (signal.MultiplexerIdentifier == p.currentMultiplexer) // check if we're on the same page
-                                    result = ExtractSignalFromBytes(bytes, signal); // then return it
-                                else return 0;
-                                  }
-                                  else result = ExtractSignalFromBytes(bytes, signal);
-                                  if (valueLookup != null)
+                            DBCLib.Message message = (DBCLib.Message)entry;
+
+                            packets.Add((int)message.Id, p = new Packet((int)message.Id, this));
+                            foreach (DBCLib.Message.Signal signal in message.Signals)
+                            {
+                                var valueLookup = (DBCLib.Value)
+                                  entries.Where(x => x is DBCLib.Value && ((DBCLib.Value)x).ContextSignalName == signal.Name).FirstOrDefault();
+                                p.AddValue(
+                                  signal.Name,//.Replace("_", " "),
+                                  signal.Unit,
+                                  signal.Name,
+                                  (bytes) =>
                                   {
-                                      string s =
-                                valueLookup.Mapping.Where(x => x.Key == result).FirstOrDefault().Value; //TryGetValue((long)result, out s);
-                                  if (s != null)
-                                          return 0;
-                                          //return s;
+                                      double result;
+                                      if (signal.StartBit + signal.BitSize > bytes.Length * 8) // check data length
+                                      return 0;
+                                      if (signal.Multiplexer) // if this is our multiplex / page selector
+                                      return
+                                        p.currentMultiplexer = // store it
+                                          ExtractSignalFromBytes(bytes, signal); // and return it
+                                  else if (signal.MultiplexerIdentifier != null)
+                                      { // else if this is a sub-item
+                                      if (signal.MultiplexerIdentifier == p.currentMultiplexer) // check if we're on the same page
+                                          result = ExtractSignalFromBytes(bytes, signal); // then return it
+                                      else return 0;
+                                      }
+                                      else result = ExtractSignalFromBytes(bytes, signal);
+                                      if (valueLookup != null)
+                                      {
+                                          string s =
+                                    valueLookup.Mapping.Where(x => x.Key == result).FirstOrDefault().Value; //TryGetValue((long)result, out s);
+                                      if (s != null)
+                                              return 0;
+                                      //return s;
                                   }
-                                  return result;
-                              },
-                              null
-                              );
+                                      return result;
+                                  },
+                                  null
+                                  );
+                            }
                         }
                     }
                 }

@@ -150,6 +150,7 @@
     <Compile Include="Value.cs" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\Model3CAN.dbc" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
