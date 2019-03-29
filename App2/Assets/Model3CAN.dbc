@@ -122,7 +122,7 @@ BO_ 984 ID3D8Elevation: 2 VehicleBus
  SG_ Elevation3D8 : 0|16@1- (1,0) [-32768|32767] "M" Vector__XXX
 
 BO_ 1320 ID528UnixTime: 4 VehicleBus
- SG_ UnixTime528 : 0|32@0+ (1,0) [0|4294967295] "Sec" Vector__XXX
+ SG_ UnixTime528 : 0|32@0+ (1,0) [0|0] "Sec" Vector__XXX
 
 BO_ 792 ID318DateAndTimeUTC: 8 VehicleBus
  SG_ Year318 : 0|8@1+ (1,0) [0|0] "Yr" Vector__XXX

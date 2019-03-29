@@ -38,7 +38,7 @@ namespace TeslaSCAN {
         //mPaints.SetStyle(Paint.Style.Fill);
         mPaints2.SetStyle(Paint.Style.Stroke);
         mPaints2.StrokeWidth = (4);
-        mPaints2.Color = Color.DarkRed;
+        mPaints2.Color = Color.Black;
         mFramePaint = new Paint();
         mFramePaint.AntiAlias = true;
         mFramePaint.SetStyle(Paint.Style.Stroke);

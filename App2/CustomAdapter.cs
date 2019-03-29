@@ -183,9 +183,9 @@ namespace TeslaSCAN {
 
           ArcView g = (ArcView) view.FindViewById(Resource.Id.arcView1);
           if (item.selected)
-            view.SetBackgroundColor(Color.ParseColor("#30FF8800"));
+            view.SetBackgroundColor(Color.ParseColor("#800045ff")); //view.SetBackgroundColor(Color.ParseColor("#30FF8800"));
           else
-            view.SetBackgroundColor(Color.Black);
+            view.SetBackgroundColor(Color.DarkGray);
 
           if (item.viewType == 4)
             g.Visibility = ViewStates.Invisible;
@@ -224,7 +224,7 @@ namespace TeslaSCAN {
             progress.Rotation = 0;
 
             if (item.selected)
-              progress.ProgressDrawable.SetColorFilter(Color.ParseColor("#30FF8800"), PorterDuff.Mode.Add);
+              progress.ProgressDrawable.SetColorFilter(Color.ParseColor("#900045ff"), PorterDuff.Mode.Add); //progress.ProgressDrawable.SetColorFilter(Color.ParseColor("#30FF8800"), PorterDuff.Mode.Add);
             else
               progress.ProgressDrawable.ClearColorFilter();
 

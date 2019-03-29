@@ -5,9 +5,9 @@
     p1:layout_height="100dip">
 	<com.emon.canbus.tesla.teslaScan.ArcView
 		p1:layout_width="fill_parent"
-		p1:layout_height="100dip"
+		p1:layout_height="95dip"
 		p1:id="@+id/arcView1"
-		p1:background="#ff000000" />
+		p1:background="#ffededed" />
 	<TextView
 		p1:text="Large Text"
 		p1:textAppearance="?android:attr/textAppearanceLarge"
@@ -16,7 +16,7 @@
 		p1:layout_height="120dip"
 		p1:layout_centerHorizontal="true"
 		p1:gravity="bottom"
-		p1:textColor="@android:color/white"
+		p1:textColor="@android:color/black"
 		p1:paddingBottom="20dip"
 		p1:textSize="40dip" />
 	<TextView
@@ -27,14 +27,15 @@
 		p1:layout_height="wrap_content"
 		p1:textColor="#ffffffff"
 		p1:layout_centerHorizontal="true"
-		p1:layout_alignParentBottom="true" />
+		p1:layout_alignParentBottom="true"
+		p1:layout_marginBottom="2.5dp" />
     <TextView
         p1:text="unit"
         p1:textAppearance="?android:attr/textAppearanceMedium"
         p1:id="@+id/textView3"
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
-        p1:textColor="#ffafafaf"
+        p1:textColor="#ff0f0f0f"
         p1:layout_toRightOf="@id/textView2"
         p1:layout_alignBaseline="@id/textView2"
         p1:maxLines="1" />
