@@ -244,7 +244,7 @@ namespace TeslaSCAN {
                                 var valueLookup = (DBCLib.Value)
                                   entries.Where(x => x is DBCLib.Value && ((DBCLib.Value)x).ContextSignalName == signal.Name).FirstOrDefault();
                                 p.AddValue(
-                                  signal.Name,//.Replace("_", " "),
+                                  signal.Name.Replace("_", " ").Remove(signal.Name.Length - 3),//.Replace("_", " "),
                                   signal.Unit,
                                   NameToTag(message.Id),//NameToTag(signal.Name),
                                   (bytes) =>

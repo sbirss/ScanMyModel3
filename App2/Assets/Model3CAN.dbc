@@ -39,68 +39,68 @@ BU_: Receiver ChassisBus VehicleBus
 BO_ 962 ID3C2VCLswitches: 8 VehicleBus
 
 BO_ 822 ID336MaxPowerRating: 3 VehicleBus
- SG_ DriveRegenRating336 : 16|8@1+ (1,-100) [-100|155] "kW" Vector__XXX
- SG_ DrivePowerRating336 : 0|9@1+ (1,0) [0|511] "kW" Vector__XXX
+ SG_ Drive_Regen_Rating336 : 16|8@1+ (1,-100) [-100|155] "kW" Vector__XXX
+ SG_ Drive_Power_Rating336 : 0|9@1+ (1,0) [0|511] "kW" Vector__XXX
 
 BO_ 819 ID333UIcharging: 4 VehicleBus
- SG_ UIchargeToSOC333 : 16|10@1+ (0.1,0) [0|102.3] "%" Vector__XXX
- SG_ UIchargeCurrentLimit333 : 8|7@1+ (1,0) [0|127] "A" Vector__XXX
+ SG_ Charge_To_SOC333 : 16|10@1+ (0.1,0) [0|102.3] "%" Vector__XXX
+ SG_ Charge_Current_Limit333 : 8|7@1+ (1,0) [0|127] "A" Vector__XXX
 
 BO_ 577 ID241Coolant: 7 VehicleBus
- SG_ VCFPTCoolantFlow241 : 22|9@1+ (0.1,0) [0|51.1] "LPM" Vector__XXX
- SG_ VCFbattCoolantFlow241 : 0|9@1+ (0.1,0) [0|51.1] "LPM" Vector__XXX
+ SG_ VCFPT_Coolant_Flow241 : 22|9@1+ (0.1,0) [0|51.1] "LPM" Vector__XXX
+ SG_ VCF_batt_Coolant_Flow241 : 0|9@1+ (0.1,0) [0|51.1] "LPM" Vector__XXX
 
 BO_ 659 ID293chassisControls: 8 VehicleBus
- SG_ UICCtrailerMode293 : 12|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ UICCtrafficLightStopSigns293 : 46|2@1+ (1,0) [0|0] "" Vector__XXX
- SG_ UICCtractionControlMode293 : 2|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ UICCsteeringMode293 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ UICCovertakeEnable293 : 18|2@1+ (1,0) [0|0] "" Vector__XXX
- SG_ UICCnarrowGuages293 : 7|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ UICCdebugEnable293 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ UICC_trailer_Mode293 : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ UICC_traffic_LightStopSigns293 : 46|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UICC_traction_Control_Mode293 : 2|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ UICC_steering_Mode293 : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ UICC_overtake_Enable293 : 18|2@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ UICC_narrow_Guages293 : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ UICC_debug_Enable293 : 17|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 616 ID268SystemPower: 5 VehicleBus
- SG_ SystemRegenPowerMax268 : 32|8@1+ (1,-100) [-100|155] "kW" Vector__XXX
- SG_ SystemHeatPowerMax268 : 0|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
- SG_ SystemHeatPower268 : 8|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
- SG_ SystemDrivePowerMax268 : 16|9@1+ (1,0) [0|511] "kW" Vector__XXX
+ SG_ System_RegenPowerMax268 : 32|8@1+ (1,-100) [-100|155] "kW" Vector__XXX
+ SG_ System_HeatPowerMax268 : 0|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
+ SG_ System_HeatPower268 : 8|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
+ SG_ System_DrivePowerMax268 : 16|9@1+ (1,0) [0|511] "kW" Vector__XXX
 
 BO_ 79 ID04FGPSLatLong: 8 ChassisBus
- SG_ GPSLongitude04F : 28|28@1- (1E-006,0) [-1342.17728|1342.17727] "Deg"  Receiver
- SG_ GPSLattitude04F : 0|28@1- (1E-006,0) [-134.217728|134.217727] "Deg"  Receiver
+ SG_ GPS_Longitude04F : 28|28@1- (1E-006,0) [-1342.17728|1342.17727] "Deg"  Receiver
+ SG_ GPS_Lattitude04F : 0|28@1- (1E-006,0) [-134.217728|134.217727] "Deg"  Receiver
 
 BO_ 978 ID3D2TotalChargeDischarge: 8 VehicleBus
- SG_ TotalDischargeKWh3D2 : 0|32@1+ (0.001,0) [0|4294967.295] "kWh" Vector__XXX
- SG_ TotalChargeKWh3D2 : 32|32@1+ (0.001,0) [0|4294967.295] "kWh" Vector__XXX
+ SG_ Total_Discharge3D2 : 0|32@1+ (0.001,0) [0|4294967.295] "kWh" Vector__XXX
+ SG_ Total_Charge3D2 : 32|32@1+ (0.001,0) [0|4294967.295] "kWh" Vector__XXX
 
 BO_ 722 ID2D2BMSVAlimits: 8 VehicleBus
- SG_ MinVoltage2D2 : 0|16@1+ (0.01,0) [0|655.35] "V" Vector__XXX
- SG_ MaxDischargeCurrent2D2 : 48|14@1+ (0.128,0) [0|2097.024] "A" Vector__XXX
- SG_ MaxChargeCurrent2D2 : 32|14@1+ (0.1,0) [0|1638.3] "A" Vector__XXX
- SG_ MaxVoltage2D2 : 16|16@1+ (0.01,0) [0|655.35] "V" Vector__XXX
+ SG_ Min_Voltage2D2 : 0|16@1+ (0.01,0) [0|655.35] "V" Vector__XXX
+ SG_ Max_Discharge_Current2D2 : 48|14@1+ (0.128,0) [0|2097.024] "A" Vector__XXX
+ SG_ Max_Charge_Current2D2 : 32|14@1+ (0.1,0) [0|1638.3] "A" Vector__XXX
+ SG_ Max_Voltage2D2 : 16|16@1+ (0.01,0) [0|655.35] "V" Vector__XXX
 
 BO_ 1345 ID541FastChargeMaxLimits: 8 VehicleBus
- SG_ FCMaxPowerLimit541 : 0|13@1+ (0.062256,0) [0|509.938896] "kW" Vector__XXX
- SG_ FCMaxCurrentLimit541 : 16|13@1+ (0.073242,0) [0|599.925222] "A" Vector__XXX
+ SG_ FCMax_Power_Limit541 : 0|13@1+ (0.062256,0) [0|509.938896] "kW" Vector__XXX
+ SG_ FCMax_Current_Limit541 : 16|13@1+ (0.073242,0) [0|599.925222] "A" Vector__XXX
 
 BO_ 580 ID244FastChargeLimits: 8 VehicleBus
- SG_ FCMinVlimit244 : 48|13@1+ (0.073242,0) [0|599.925222] "V" Vector__XXX
- SG_ FCMaxVlimit244 : 32|13@1+ (0.073242,0) [0|599.925222] "V" Vector__XXX
- SG_ FCCurrentLimit244 : 16|13@1+ (0.073242,0) [0|599.925222] "A" Vector__XXX
- SG_ FCPowerLimit244 : 0|13@1+ (0.062256,0) [0|509.938896] "kW" Vector__XXX
+ SG_ FC_MinVlimit244 : 48|13@1+ (0.073242,0) [0|599.925222] "V" Vector__XXX
+ SG_ FC_MaxVlimit244 : 32|13@1+ (0.073242,0) [0|599.925222] "V" Vector__XXX
+ SG_ FC_CurrentLimit244 : 16|13@1+ (0.073242,0) [0|599.925222] "A" Vector__XXX
+ SG_ FC_PowerLimit244 : 0|13@1+ (0.062256,0) [0|509.938896] "kW" Vector__XXX
 
 BO_ 532 ID214FastChargeVA: 8 VehicleBus
- SG_ FCadapterLocked214 : 15|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ FCcurrentLimitAchieved214 : 12|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ FCCurrent214 : 32|14@1- (0.0732422,0) [-600.0001024|599.9268602] "A" Vector__XXX
- SG_ FCVoltage214 : 48|13@1+ (0.0732422,0) [0|599.9268602] "V" Vector__XXX
- SG_ FCminCurrentLimit214 : 16|13@1+ (0.1,0) [0|819.1] "A" Vector__XXX
- SG_ FCpostID214 : 46|2@1+ (2,0) [0|6] "" Vector__XXX
- SG_ FCpowerLimitAchieved214 : 13|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ FCprotocolVersion214 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ FCstatusCode214 : 8|4@1+ (1,0) [0|0] "" Vector__XXX
- SG_ FCtype214 : 29|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ FCvoltageLimitAchieved214 : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FC_adapterLocked214 : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FC_currentLimitAchieved214 : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FC_Current214 : 32|14@1- (0.0732422,0) [-600.0001024|599.9268602] "A" Vector__XXX
+ SG_ FC_Voltage214 : 48|13@1+ (0.0732422,0) [0|599.9268602] "V" Vector__XXX
+ SG_ FC_minCurrentLimit214 : 16|13@1+ (0.1,0) [0|819.1] "A" Vector__XXX
+ SG_ FC_postID214 : 46|2@1+ (2,0) [0|6] "" Vector__XXX
+ SG_ FC_powerLimitAchieved214 : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FC_protocolVersion214 : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ FC_statusCode214 : 8|4@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ FC_type214 : 29|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ FC_voltageLimitAchieved214 : 14|1@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 533 ID215FCisolation: 1 VehicleBus
  SG_ FCIsolation215 : 0|8@1+ (40,0) [0|10200] "kOhm" Vector__XXX
@@ -113,16 +113,16 @@ BO_ 535 ID217FCinfo: 8 VehicleBus
  SG_ FCuiStopType217 m0 : 24|4@1+ (1,0) [0|15] "" Vector__XXX
 
 BO_ 801 ID321VCFrontTempsLevels: 8 VehicleBus
- SG_ TempCoolantPTinlet321 : 10|10@1+ (0.125,-40) [-40|87.875] "C" Vector__XXX
- SG_ TempCoolantBattInlet321 : 0|10@1+ (0.125,-40) [-40|87.875] "C" Vector__XXX
- SG_ TempAmbientRaw321 : 24|8@1+ (0.5,-40) [-40|87.5] "C" Vector__XXX
- SG_ TempAmbient321 : 40|8@1+ (0.5,-40) [-40|87.5] "C" Vector__XXX
+ SG_ Temp_Coolant_PTinlet321 : 10|10@1+ (0.125,-40) [-40|87.875] "C" Vector__XXX
+ SG_ Temp_Coolant_BattInlet321 : 0|10@1+ (0.125,-40) [-40|87.875] "C" Vector__XXX
+ SG_ Temp_Ambient_Raw321 : 24|8@1+ (0.5,-40) [-40|87.5] "C" Vector__XXX
+ SG_ Temp_Ambient321 : 40|8@1+ (0.5,-40) [-40|87.5] "C" Vector__XXX
 
 BO_ 984 ID3D8Elevation: 2 VehicleBus
  SG_ Elevation3D8 : 0|16@1- (1,0) [-32768|32767] "M" Vector__XXX
 
 BO_ 1320 ID528UnixTime: 4 VehicleBus
- SG_ UnixTime528 : 0|32@0+ (1,0) [0|0] "Sec" Vector__XXX
+ SG_ Unix_Time528 : 0|32@0+ (1,0) [0|0] "Sec" Vector__XXX
 
 BO_ 792 ID318DateAndTimeUTC: 8 VehicleBus
  SG_ Year318 : 0|8@1+ (1,0) [0|0] "Yr" Vector__XXX
@@ -134,75 +134,75 @@ BO_ 792 ID318DateAndTimeUTC: 8 VehicleBus
  SG_ Oth318 : 48|16@1+ (1,0) [0|0] "Unk" Vector__XXX
 
 BO_ 609 ID261_12vBattStatus: 8 VehicleBus
- SG_ v12vBattTemp261 : 16|16@1- (0.01,0) [-327.68|327.67] "C" Vector__XXX
- SG_ v12vBattAH261 : 32|14@1+ (0.01,0) [0|163.83] "AH" Vector__XXX
- SG_ v12vBattCurrent261 : 48|16@1- (0.005,0) [-163.84|163.835] "A" Vector__XXX
- SG_ v12vBattVoltage261 : 0|12@1+ (0.00544368,0) [0|22.2918696] "V" Vector__XXX
+ SG_ 12v_Batt_Temp261 : 16|16@1- (0.01,0) [-327.68|327.67] "C" Vector__XXX
+ SG_ 12v_Batt_AH261 : 32|14@1+ (0.01,0) [0|163.83] "AH" Vector__XXX
+ SG_ 12v_Batt_Current261 : 48|16@1- (0.005,0) [-163.84|163.835] "A" Vector__XXX
+ SG_ 12v_Batt_Voltage261 : 0|12@1+ (0.00544368,0) [0|22.2918696] "V" Vector__XXX
 
 BO_ 297 ID129SteeringAngle: 8 VehicleBus
- SG_ SteeringSensorC129 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SteeringSensorB129 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ SteeringSensorA129 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ SteeringSpeed129 : 32|14@1+ (0.5,-4096) [-4096|4095.5] "D/S" Vector__XXX
- SG_ SteeringAngle129 : 16|14@1+ (0.1,-819.2) [-819.2|819.1] "Deg" Vector__XXX
+ SG_ Steering_SensorC129 : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Steering_SensorB129 : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Steering_SensorA129 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Steering_Speed129 : 32|14@1+ (0.5,-4096) [-4096|4095.5] "D/S" Vector__XXX
+ SG_ Steering_Angle129 : 16|14@1+ (0.1,-819.2) [-819.2|819.1] "Deg" Vector__XXX
 
 BO_ 612 ID264ChargeLineStatus: 6 VehicleBus
- SG_ ChargeLinePower264 : 24|8@1+ (0.1,0) [0|25.5] "kW" Vector__XXX
- SG_ ChargeLineCurrentLimit264 : 32|10@1+ (0.1,0) [0|102.3] "A" Vector__XXX
- SG_ ChargeLineVoltage264 : 0|14@1+ (0.0333,0) [0|545.5539] "V" Vector__XXX
- SG_ ChargeLineCurrent264 : 14|9@1+ (0.1,0) [0|51.1] "A" Vector__XXX
+ SG_ Charge_Line_Power264 : 24|8@1+ (0.1,0) [0|25.5] "kW" Vector__XXX
+ SG_ Charge_Line_CurrentLimit264 : 32|10@1+ (0.1,0) [0|102.3] "A" Vector__XXX
+ SG_ Charge_Line_Voltage264 : 0|14@1+ (0.0333,0) [0|545.5539] "V" Vector__XXX
+ SG_ Charge_Line_Current264 : 14|9@1+ (0.1,0) [0|51.1] "A" Vector__XXX
 
 BO_ 548 ID224PCSDCDCstatus: 8 VehicleBus
- SG_ DCDCstate224 : 6|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ DCDCoutputCurrentMax224 : 29|12@1+ (0.1,0) [0|409.5] "A" Vector__XXX
- SG_ DCDCoutputCurrent224 : 16|12@1- (0.1,0) [-204.8|204.7] "A" Vector__XXX
+ SG_ DCDC_state224 : 6|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ DCDC_output_CurrentMax224 : 29|12@1+ (0.1,0) [0|409.5] "A" Vector__XXX
+ SG_ DCDC_output_Current224 : 16|12@1- (0.1,0) [-204.8|204.7] "A" Vector__XXX
 
 BO_ 280 ID118DriveSystemStatus: 8 VehicleBus
  SG_ Immobilizer118 : 27|3@1+ (1,0) [0|0] "" Vector__XXX
- SG_ DriveState118 : 16|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ TractionControl118 : 40|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ ParkingBrake118 : 44|2@1+ (1,0) [0|15] "" Vector__XXX
- SG_ BrakeState118 : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Drive_State118 : 16|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Traction_Control118 : 40|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ Parking_Brake118 : 44|2@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Brake_State118 : 26|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ DIgear118 : 21|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ BrakePedal118 : 19|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ PedalPosition118 : 32|8@1+ (0.4,0) [0|102] "%" Vector__XXX
- SG_ TrackMode118 : 48|2@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Brake_Pedal118 : 19|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Pedal_Position118 : 32|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ Track_Mode118 : 48|2@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 530 ID212BMSstatus: 8 VehicleBus
- SG_ BMSstate212 : 11|4@1+ (1,0) [0|15] "" Vector__XXX
- SG_ BMSchargeStatus212 : 32|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ BMScontactors212 : 8|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ BMSchargePowerAvail212 : 38|11@1+ (0.125,0) [0|255.875] "kW" Vector__XXX
- SG_ MinBattTemp212 : 56|8@1+ (0.5,-40) [-40|87.5] "C" Vector__XXX
+ SG_ BMS_state212 : 11|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ BMS_charge_Status212 : 32|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ BMS_contactors212 : 8|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ BMS_charge_Power_Avail212 : 38|11@1+ (0.125,0) [0|255.875] "kW" Vector__XXX
+ SG_ Min_Batt_Temp212 : 56|8@1+ (0.5,-40) [-40|87.5] "C" Vector__XXX
  SG_ IsolationR212 : 19|10@1+ (1,0) [0|1023] "kOhm" Vector__XXX
 
 BO_ 850 ID352BMSenergy: 8 VehicleBus
- SG_ BtochargecompleteKWh352 : 40|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
- SG_ BidealremainKWh352 : 30|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
- SG_ BexpectedremainKWh352 : 20|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
- SG_ BremainingKWhNom352 : 10|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
- SG_ BfullKWhNom352 : 0|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
- SG_ BbufferKWh352 : 50|8@1+ (0.1,0) [0|25.5] "kWh" Vector__XXX
+ SG_ B_tochargecompleteKWh352 : 40|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
+ SG_ B_ideal_remainKWh352 : 30|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
+ SG_ B_expectedremainKWh352 : 20|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
+ SG_ B_remainingKWhNom352 : 10|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
+ SG_ B_fullKWhNom352 : 0|10@1+ (0.1,0) [0|102.3] "kWh" Vector__XXX
+ SG_ B_bufferKWh352 : 50|8@1+ (0.1,0) [0|25.5] "kWh" Vector__XXX
 
 BO_ 594 ID252PowerLimits: 8 VehicleBus
- SG_ HVACpowerMax252 : 50|10@1+ (0.02,0) [0|20.46] "kW" Vector__XXX
- SG_ MaxHeatParked252 : 32|10@1+ (0.1,0) [0|102.3] "kW" Vector__XXX
- SG_ MaxDischarge252 : 16|16@1+ (0.01,0) [0|655.35] "kW" Vector__XXX
- SG_ MaxRegen252 : 0|16@1+ (0.01,0) [0|655.35] "kW" Vector__XXX
+ SG_ HVAC_power_Max252 : 50|10@1+ (0.02,0) [0|20.46] "kW" Vector__XXX
+ SG_ Max_Heat_Parked252 : 32|10@1+ (0.1,0) [0|102.3] "kW" Vector__XXX
+ SG_ Max_Discharge252 : 16|16@1+ (0.01,0) [0|655.35] "kW" Vector__XXX
+ SG_ Max_Regen252 : 0|16@1+ (0.01,0) [0|655.35] "kW" Vector__XXX
 
 BO_ 786 ID312BMSthermal: 8 VehicleBus
  SG_ BMSdissipation312 : 0|10@1+ (0.02,0) [0|20.46] "kW" Vector__XXX
 
 BO_ 658 ID292BMS_SOC: 8 VehicleBus
- SG_ SOCmax292 : 20|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
- SG_ SOCave292 : 30|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
- SG_ SOCUI292 : 0|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
- SG_ SOCmin292 : 10|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
+ SG_ SOC_max292 : 20|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
+ SG_ SOC_ave292 : 30|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
+ SG_ SOC_UI292 : 0|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
+ SG_ SOC_min292 : 10|10@1+ (0.1,0) [0|102.3] "" Vector__XXX
 
 BO_ 599 ID257UIspeed: 8 VehicleBus
- SG_ UIspeedUnits257 : 32|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ UIspeed_signed257 : 12|12@1+ (0.05,-25) [-25|179.75] "MPH" Vector__XXX
- SG_ UIspeed_abs257 : 24|8@1+ (1,0) [0|255] "MPH" Vector__XXX
+ SG_ SpeedUnits257 : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Speed_signed257 : 12|12@1+ (0.05,-25) [-25|179.75] "MPH" Vector__XXX
+ SG_ Speed_abs257 : 24|8@1+ (1,0) [0|255] "MPH" Vector__XXX
 
 BO_ 1029 ID405VIN: 8 VehicleBus
  SG_ VINB405 m17 : 8|56@1+ (1,0) [0|7.2057594038E+016] "" Vector__XXX
@@ -211,106 +211,106 @@ BO_ 1029 ID405VIN: 8 VehicleBus
  SG_ mux405 M : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 886 ID376InverterTemps: 8 VehicleBus
- SG_ TempInvPCB376 : 0|8@1+ (1,-40) [-40|215] "C" Vector__XXX
- SG_ TempPctStator376 : 48|8@1+ (0.4,0) [0|102] "%" Vector__XXX
- SG_ TempPctInverter376 : 40|8@1+ (0.4,0) [0|102] "%" Vector__XXX
- SG_ TempInvCapbank376 : 24|8@1+ (1,-40) [-40|215] "C" Vector__XXX
- SG_ TempStator376 : 16|8@1+ (1,-40) [-40|215] "C" Vector__XXX
- SG_ TempInvHeatsink376 : 32|8@1+ (1,-40) [-40|215] "C" Vector__XXX
- SG_ TempInverter376 : 8|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Temp_InvPCB376 : 0|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Temp_PctStator376 : 48|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ Temp_PctInverter376 : 40|8@1+ (0.4,0) [0|102] "%" Vector__XXX
+ SG_ Temp_InvCapbank376 : 24|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Temp_Stator376 : 16|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Temp_InvHeatsink376 : 32|8@1+ (1,-40) [-40|215] "C" Vector__XXX
+ SG_ Temp_Inverter376 : 8|8@1+ (1,-40) [-40|215] "C" Vector__XXX
 
 BO_ 340 ID154: 8 VehicleBus
- SG_ RAWTorque154 : 40|12@1- (0.25,0) [-512|511.75] "NM" Vector__XXX
+ SG_ RAW_Torque154 : 40|12@1- (0.25,0) [-512|511.75] "NM" Vector__XXX
 
 BO_ 950 ID3B6odometer: 4 VehicleBus
  SG_ Odometer3B6 : 0|32@1+ (0.001,0) [0|4294967.295] "KM" Vector__XXX
 
 BO_ 614 ID266InverterPower: 7 VehicleBus
- SG_ HeatPowerOptimal266 : 32|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
- SG_ HeatPowerMax266 : 40|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
- SG_ HeatPower266 : 48|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
- SG_ RearPowerDissipation266 : 8|8@1+ (0.125,-0.5) [-0.5|31.375] "kW" Vector__XXX
- SG_ RearPower266 : 16|11@1- (0.5,0) [-512|511.5] "kW" Vector__XXX
+ SG_ Heat_Power_Optimal266 : 32|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
+ SG_ Heat_Power_Max266 : 40|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
+ SG_ Heat_Power266 : 48|8@1+ (0.08,0) [0|31875] "kW" Vector__XXX
+ SG_ Rear_Power_Dissipation266 : 8|8@1+ (0.125,-0.5) [-0.5|31.375] "kW" Vector__XXX
+ SG_ Rear_Power266 : 16|11@1- (0.5,0) [-512|511.5] "kW" Vector__XXX
  SG_ v12vInverter266 : 0|8@1+ (0.1,0) [0|25.5] "Volts" Vector__XXX
 
 BO_ 264 ID108DriveTorqueRPM: 8 VehicleBus
- SG_ TorqueActual108 : 27|13@1- (0.2,0) [-819.2|819] "NM"  Receiver
- SG_ TorqueRequest108 : 12|13@1- (0.2,0) [-819.2|819] "NM"  Receiver
- SG_ RearAxleRPM108 : 40|16@1- (0.1,0) [-3276.8|3276.7] "RPM"  Receiver
+ SG_ Torque_Actual108 : 27|13@1- (0.2,0) [-819.2|819] "NM"  Receiver
+ SG_ Torque_Request108 : 12|13@1- (0.2,0) [-819.2|819] "NM"  Receiver
+ SG_ Rear_Axle_RPM108 : 40|16@1- (0.1,0) [-3276.8|3276.7] "RPM"  Receiver
 
 BO_ 306 ID132HVBattAmpVolt: 8 VehicleBus
- SG_ ChargeHoursRemaining132 : 48|12@1+ (1,0) [0|4095] "Min" Vector__XXX
- SG_ BattVoltage132 : 0|16@1+ (0.01,0) [0|655.35] "V" Vector__XXX
- SG_ RawBattCurrent132 : 32|16@1+ (-0.05,1000) [-2276.75|1000] "A" Vector__XXX
- SG_ SmoothBattCurrent132 : 16|15@1+ (-0.1,1000) [-2276.7|1000] "A" Vector__XXX
+ SG_ Charge_Hours_Remaining132 : 48|12@1+ (1,0) [0|4095] "Min" Vector__XXX
+ SG_ Batt_Voltage132 : 0|16@1+ (0.01,0) [0|655.35] "V" Vector__XXX
+ SG_ Raw_Batt_Current132 : 32|16@1+ (-0.05,1000) [-2276.75|1000] "A" Vector__XXX
+ SG_ Smooth_Batt_Current132 : 16|15@1+ (-0.1,1000) [-2276.7|1000] "A" Vector__XXX
 
 BO_ 294 ID126: 8 VehicleBus
  SG_ Demand126 : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ BattVoltage126 : 0|16@1+ (0.5,0) [0|32767.5] "Volts" Vector__XXX
+ SG_ Batt_Voltage126 : 0|16@1+ (0.5,0) [0|32767.5] "Volts" Vector__XXX
 
 BO_ 799 ID31FTPMSsensors: 8 ChassisBus
- SG_ TPMSFLpressure31F : 0|8@1+ (0.025,0) [0|0] "bar" Vector__XXX
- SG_ TPMSFRpressure31F : 16|8@1+ (0.025,0) [0|0] "bar" Vector__XXX
- SG_ TPMSRLpressure31F : 32|8@1+ (0.025,0) [0|0] "bar" Vector__XXX
- SG_ TPMSRRpressure31F : 48|8@1+ (0.025,0) [0|0] "bar" Vector__XXX
- SG_ TPMSFLtemp31F : 8|8@1+ (1,-40) [0|0] "degC" Vector__XXX
- SG_ TPMSFRtemp31F : 24|8@1+ (1,-40) [0|0] "degC" Vector__XXX
- SG_ TPMSRLtemp31F : 40|8@1+ (1,-40) [0|0] "degC" Vector__XXX
- SG_ TPMSRRtemp31F : 56|8@1+ (1,-40) [0|0] "degC" Vector__XXX
+ SG_ TPMS_FL_pressure31F : 0|8@1+ (0.025,0) [0|0] "bar" Vector__XXX
+ SG_ TPMS_FR_pressure31F : 16|8@1+ (0.025,0) [0|0] "bar" Vector__XXX
+ SG_ TPMS_RL_pressure31F : 32|8@1+ (0.025,0) [0|0] "bar" Vector__XXX
+ SG_ TPMS_RR_pressure31F : 48|8@1+ (0.025,0) [0|0] "bar" Vector__XXX
+ SG_ TPMS_FL_temp31F : 8|8@1+ (1,-40) [0|0] "degC" Vector__XXX
+ SG_ TPMS_RR_temp31F : 56|8@1+ (1,-40) [0|0] "degC" Vector__XXX
+ SG_ TPMS_FR_temp31F : 24|8@1+ (1,-40) [0|0] "degC" Vector__XXX
+ SG_ TPMS_RL_temp31F : 40|8@1+ (1,-40) [0|0] "degC" Vector__XXX
 
 BO_ 1022 ID3FEbrakeTemps: 5 VehicleBus
- SG_ BrakeTempFL3FE : 0|10@1+ (1,-40) [0|0] "C" Vector__XXX
- SG_ BrakeTempFR3FE : 10|10@1+ (1,-40) [0|0] "C" Vector__XXX
- SG_ BrakeTempRL3FE : 20|10@1+ (1,-40) [0|0] "C" Vector__XXX
- SG_ BrakeTempRR3FE : 30|10@1+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Brake_TempFL3FE : 0|10@1+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Brake_TempFR3FE : 10|10@1+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Brake_TempRL3FE : 20|10@1+ (1,-40) [0|0] "C" Vector__XXX
+ SG_ Brake_TempRR3FE : 30|10@1+ (1,-40) [0|0] "C" Vector__XXX
 
 BO_ 2047 ID7FFcarConfig: 8 VehicleBus
- SG_ CFGmuxindex7FF M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGairSuspension7FF m1 : 8|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGepasType7FF m1 : 9|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGdrivetrainType7FF m1 : 10|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGrightHandDrive7FF m1 : 11|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGcountry7FF m1 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGheatedWipers7FF m2 : 8|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGfrontSeatHeaters7FF m2 : 9|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGrearSeatHeaters7FF m2 : 10|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGpackEnergy7FF m2 : 11|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGbrakeHWType7FF m2 : 12|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGhomelinkType7FF m2 : 13|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGvdcType7FF m2 : 14|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGxcpIbst7FF m2 : 15|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGxcpESP7FF m2 : 16|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGmemoryMirrors7FF m2 : 17|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGpowerSteeringColumn7FF m2 : 18|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGinteriorLighting7FF m2 : 19|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGfrontFogLamps7FF m2 : 20|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGheadlamps7FF m2 : 21|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGaudioType7FF m2 : 22|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGlumbarECUType7FF m2 : 23|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGibstWakeType7FF m2 : 24|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGfrontSeatType7FF m2 : 25|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ CFGauxParkLamps7FF m2 : 26|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGpedestrianWarningSound7FF m2 : 27|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGhvacQuietSnorkelType7FF m2 : 28|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGhvacPanelVaneType7FF m2 : 29|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGCabinBlowerCtrlType7FF m2 : 30|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGperformancePackage7FF m2 : 31|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGeBuckConfig7FF m2 : 32|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGwindshieldType7FF m2 : 33|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGactiveHighBeam7FF m2 : 34|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGairbagCutoffSwitch7FF m2 : 35|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGintrusionSensorType7FF m2 : 36|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGspoilerType7FF m2 : 37|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGrearGlassType7FF m2 : 38|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGrearFogLamps7FF m2 : 39|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ CFGroofType7FF m2 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ CFGautopilot7FF m2 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ CFGsuperchargingAccess7FF m2 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ CFGwheelType7FF m2 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
- SG_ CFGexteriorColor7FF m2 : 48|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ CFGnumberHVILNodes7FF m2 : 51|3@1+ (1,1) [1|8] "" Vector__XXX
- SG_ CFGrestraintsHardwareType7FF m2 : 56|5@1+ (1,0) [0|31] "" Vector__XXX
- SG_ CFGm3Raw7FF m3 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_muxindex7FF M : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_airSuspension7FF m1 : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_epasType7FF m1 : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_drivetrainType7FF m1 : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_rightHandDrive7FF m1 : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_country7FF m1 : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_heatedWipers7FF m2 : 8|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_frontSeatHeaters7FF m2 : 9|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_rearSeatHeaters7FF m2 : 10|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_packEnergy7FF m2 : 11|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_brakeHWType7FF m2 : 12|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_homelinkType7FF m2 : 13|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_vdcType7FF m2 : 14|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_xcpIbst7FF m2 : 15|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_xcpESP7FF m2 : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_memoryMirrors7FF m2 : 17|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_powerSteeringColumn7FF m2 : 18|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_interiorLighting7FF m2 : 19|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_frontFogLamps7FF m2 : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_headlamps7FF m2 : 21|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_audioType7FF m2 : 22|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_lumbarECUType7FF m2 : 23|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_ibstWakeType7FF m2 : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_frontSeatType7FF m2 : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CFG_auxParkLamps7FF m2 : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_pedestrianWarningSound7FF m2 : 27|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_hvacQuietSnorkelType7FF m2 : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_hvacPanelVaneType7FF m2 : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_CabinBlowerCtrlType7FF m2 : 30|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_performancePackage7FF m2 : 31|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_eBuckConfig7FF m2 : 32|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_windshieldType7FF m2 : 33|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_activeHighBeam7FF m2 : 34|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_airbagCutoffSwitch7FF m2 : 35|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_intrusionSensorType7FF m2 : 36|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_spoilerType7FF m2 : 37|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_rearGlassType7FF m2 : 38|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_rearFogLamps7FF m2 : 39|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CFG_roofType7FF m2 : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CFG_autopilot7FF m2 : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CFG_superchargingAccess7FF m2 : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CFG_wheelType7FF m2 : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ CFG_exteriorColor7FF m2 : 48|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ CFG_numberHVILNodes7FF m2 : 51|3@1+ (1,1) [1|8] "" Vector__XXX
+ SG_ CFG_restraintsHardwareType7FF m2 : 56|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ CFG_m3Raw7FF m3 : 8|56@1+ (1,0) [0|0] "" Vector__XXX
 
 
 
