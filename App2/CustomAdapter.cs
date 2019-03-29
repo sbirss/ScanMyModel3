@@ -73,11 +73,18 @@ namespace TeslaSCAN {
     public override View GetView(int position, View convertView, ViewGroup parent) {
       var item = items.ElementAt(position);
       View view = convertView;
+
       if (item.unit == "zVC" || item.unit == "zCC")
         item.viewType = 1;
       else
         item.viewType = ((MainActivity)context).currentTab.style*2;
-      if (((MainActivity)context).currentTab.style == 3)
+
+            //if (item.tag == "b")
+            //{
+            //    item.viewType = 5;
+            //}
+
+            if (((MainActivity)context).currentTab.style == 3)
         item.viewType = 5;
       if (view == null ||
          (int)view.Tag != item.viewType) { // no view to re-use, create new

@@ -201,8 +201,8 @@ BO_ 658 ID292BMS_SOC: 8 VehicleBus
 
 BO_ 599 ID257UIspeed: 8 VehicleBus
  SG_ UIspeedUnits257 : 32|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ UIspeed_signed257 : 12|12@1+ (0.05,-25) [-25|179.75] "MPHKPH" Vector__XXX
- SG_ UIspeed_abs257 : 24|8@1+ (1,0) [0|255] "MPHKPH" Vector__XXX
+ SG_ UIspeed_signed257 : 12|12@1+ (0.05,-25) [-25|179.75] "MPH" Vector__XXX
+ SG_ UIspeed_abs257 : 24|8@1+ (1,0) [0|255] "MPH" Vector__XXX
 
 BO_ 1029 ID405VIN: 8 VehicleBus
  SG_ VINB405 m17 : 8|56@1+ (1,0) [0|7.2057594038E+016] "" Vector__XXX

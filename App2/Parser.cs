@@ -153,6 +153,32 @@ namespace TeslaSCAN {
             return signalValue;
         }
 
+        static string NameToTag(string id_name)
+        {
+            return id_name;
+        }
+
+        static string NameToTag(uint id)
+        {
+            if (id == 599)
+            {
+                return "p";
+            //} else if (id == 306) {
+            //    return "b";
+            }
+            else if (id == 0x528)
+            {
+                return "s";
+            }
+            else if (id == 306)
+            {
+                return "b";
+            } else {
+                return "";
+            }
+            //return "p";
+        }
+
 
         public Parser(MainActivity mainActivity, CustomAdapter adapter) {
       this.adapter = adapter;
@@ -193,7 +219,7 @@ namespace TeslaSCAN {
             if (true)
             {
                 Reader reader = new DBCLib.Reader();
-
+                
                 reader.AllowErrors = true;
 
                 //List<object> entries = reader.Read(dbcPath);
@@ -220,7 +246,7 @@ namespace TeslaSCAN {
                                 p.AddValue(
                                   signal.Name,//.Replace("_", " "),
                                   signal.Unit,
-                                  signal.Name,
+                                  NameToTag(message.Id),//NameToTag(signal.Name),
                                   (bytes) =>
                                   {
                                       double result;

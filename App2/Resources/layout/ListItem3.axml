@@ -35,6 +35,6 @@
         p1:layout_width="wrap_content"
         p1:layout_height="wrap_content"
         p1:layout_alignParentRight="true"
-        p1:textColor="@android:color/darker_gray"
+        p1:textColor="@android:color/black"
         p1:layout_centerVertical="true" />
 </RelativeLayout>
